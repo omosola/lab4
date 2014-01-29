@@ -1,0 +1,17 @@
+1) Stretch goal - when will hey have time to learn about partials? Is it expected that people do the strecth goal outside of lab?
+What does this stretch goal even mean?
+
+2) 
+error when doing vagrant up
+
+Failed to mount folders in Linux guest. This is usually beacuse
+the "vboxsf" file system is not available. Please verify that
+the guest additions are properly installed in the guest and
+can work properly. The command attempted was:
+
+mount -t vboxsf -o uid=`id -u vagrant`,gid=`getent group vagrant | cut -d: -f3` /vagrant /vagrant
+mount -t vboxsf -o uid=`id -u vagrant`,gid=`id -g vagrant` /vagrant /vagrant
+
+3)
+Error EADDRINuSE
+Fix - used port 8080 instead of 3000 (weird)
